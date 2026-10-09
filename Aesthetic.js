@@ -1,12 +1,14 @@
 // Transition the main title and sub-titles to full opacity when the page loads
 window.onload = function() {
-document.querySelector('#headers').style.opacity = "1";
+const headers = document.querySelector('#headers');
+if (headers) headers.style.opacity = "1";
 };
     
 // Transition the information and pictures to full opacity when the user scrolls down
 window.onscroll = function() {
 if (window.pageYOffset > 50) {
-document.querySelector('#body').style.opacity = "1";
+const body = document.querySelector('#body');
+if (body) body.style.opacity = "1";
 }
 ;}
 
